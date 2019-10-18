@@ -5,14 +5,14 @@ import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
-import br.com.everson.teste.CustamerDetail;
-import br.com.everson.teste.GetCustomerDetailRequest;
-import br.com.everson.teste.GetCustomerDetailResponse;
+import br.com.everson.CustamerDetail;
+import br.com.everson.GetCustomerDetailRequest;
+import br.com.everson.GetCustomerDetailResponse;
 
 @Endpoint
 public class CustomerDetailEndPoint {
 
-	@PayloadRoot(namespace = "br.com.everson.teste",localPart = "GetCustomerDetailResponse")
+	@PayloadRoot(namespace = "br.com.everson",localPart = "GetCustomerDetailRequest")
 	@ResponsePayload
 	public GetCustomerDetailResponse prossCustomerDetailResponse(@RequestPayload GetCustomerDetailRequest req) {
 		
