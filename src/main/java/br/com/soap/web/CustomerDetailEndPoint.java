@@ -1,18 +1,20 @@
-package br.com.everson.soap;
+package br.com.soap.web;
 
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
-import br.com.everson.CustamerDetail;
-import br.com.everson.GetCustomerDetailRequest;
-import br.com.everson.GetCustomerDetailResponse;
+import br.com.soap.CustamerDetail;
+import br.com.soap.GetCustomerDetailRequest;
+import br.com.soap.GetCustomerDetailResponse;
 
 @Endpoint
 public class CustomerDetailEndPoint {
 
-	@PayloadRoot(namespace = "br.com.everson",localPart = "GetCustomerDetailRequest")
+	private static final String TARGET_NAMESPACE ="http://soap.com.br";
+	
+	@PayloadRoot(namespace = TARGET_NAMESPACE ,localPart = "GetCustomerDetailRequest")
 	@ResponsePayload
 	public GetCustomerDetailResponse prossCustomerDetailResponse(@RequestPayload GetCustomerDetailRequest req) {
 		
@@ -27,5 +29,6 @@ public class CustomerDetailEndPoint {
 		
 		return customerDetailResponse;
 	}
+	
 	
 }

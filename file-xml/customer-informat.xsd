@@ -1,6 +1,6 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-        targetNamespace="http://everson.com.br" 
-        xmlns:tns="http://everson.com.br" 
+        targetNamespace="http://soap.com.br" 
+        xmlns:tns="http://soap.com.br" 
         elementFormDefault="qualified">
         
         <xs:element name="GetCustomerDetailRequest">

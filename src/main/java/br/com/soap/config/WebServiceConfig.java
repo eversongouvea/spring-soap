@@ -1,4 +1,4 @@
-package br.com.everson.config;
+package br.com.soap.config;
 
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
