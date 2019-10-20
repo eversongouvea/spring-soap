@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GetCustomerDetailRequest 
-     xmlns="http://everson.com.br"
-     xsi:schemaLocation="http://everson.com.br customer-informat.xsd"
+     xmlns="http://soap.com.br"
+     xsi:schemaLocation="http://soap.com.br customer-informat.xsd"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      >
 	<id>123</id>

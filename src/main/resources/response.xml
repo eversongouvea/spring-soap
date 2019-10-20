@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GetCustomerDetailResponse 
-		xmlns="http://everson.com.br"
-		xsi:schemaLocation="http://everson.com.br customer-informat.xsd"
+		xmlns="http://soap.com.br"
+		xsi:schemaLocation="http://soap.com.br customer-informat.xsd"
      	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		>
 	<CustomeDetailResponse>
 		<id>123</id>
-		<name>Everson</name>
+		<name>Soap</name>
 		<telefone>99999</telefone>
-		<email>everson@gmail.com</email>
+		<email>sopa@gmail.com</email>
 	</CustomeDetailResponse>
 </GetCustomerDetailResponse>
