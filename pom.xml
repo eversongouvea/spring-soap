@@ -49,9 +49,37 @@
 			<artifactId>spring-ws-security</artifactId>
 			<exclusions>
 				<exclusion>
-					<groupId>org.springframework.security</groupId>
-					<artifactId>spring-security-core</artifactId>
+					<!-- Part of JDK -->
+					<groupId>javax.xml.soap</groupId>
+					<artifactId>saaj-api</artifactId>
 				</exclusion>
+				<exclusion>
+					<!-- Part of Java EE -->
+					<groupId>javax.mail</groupId>
+					<artifactId>mail</artifactId>
+				</exclusion>
+				<exclusion>
+					<!-- Part of JDK -->
+					<groupId>javax.xml.bind</groupId>
+					<artifactId>jaxb-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<!-- Part of JDK -->
+					<groupId>javax.xml.stream</groupId>
+					<artifactId>stax-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<!-- Part of JDK -->
+					<groupId>javax.xml.crypto</groupId>
+					<artifactId>xmldsig</artifactId>
+				</exclusion>
+				<exclusion>
+					<!-- Part of JDK -->
+					<groupId>javax.xml.ws</groupId>
+					<artifactId>jaxws-api</artifactId>
+				</exclusion>
+
+
 			</exclusions>
 		</dependency>
 
@@ -74,9 +102,9 @@
 		</dependency>
 
 		<dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-        </dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>org.plutext</groupId>
